@@ -38,7 +38,7 @@ bool isCycle(vector<pair<int,int>> &edges){
     for(auto p:edges){
         int from =find(p.first);
         int to=find(p.second);
-        if(from==to) returnn true;
+        if(from==to) return true;
         union(from,to);
     }
     return false;
